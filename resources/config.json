@@ -1,0 +1,18 @@
+{
+  "cluster-name" : "traning-topic-test",
+  "cluster-location": "kafka-location-test:9092",
+  "kafka-config" : {
+    "bootstrap.servers": "kafka-locaion-test:9092",
+    "group.id":"test"
+  },
+  "kafka-config-consumer" : {
+    "bootstrap.servers" : "kafka-location-test:9092",
+    "serializer.class": "kafka.serializer.DefaultEncoder",
+    "group.id":"test"
+  },
+  "kafka-config-producer" : {
+    "bootstrap.servers" : "kafka-location-test:9092",
+    "serializer.class" : "kafka.serializer.DefaultEncoder",
+    "group.id":"test"
+  }
+}
